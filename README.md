@@ -3,10 +3,10 @@ A simple Todo List web application built using HTML, CSS, JavaScript, and PHP. T
 
 # Features
 + **Add New Task:** Users can add a new task with a name, description, and priority.
-- **Edit Task:** Users can edit the name, description, and priority of existing tasks.
-* **Mark as Done:** Users can mark tasks as completed, moving them to a "Completed Todo's" list.
-* **View Todo List:** Users can view their current tasks in a table format.
-- **View Completed Todo's:** Users can view their completed tasks in a table format.
+* **Edit Task:** Users can edit the name, description, and priority of existing tasks.
+- **Mark as Done:** Users can mark tasks as completed, moving them to a "Completed Todo's" list.
+% **View Todo List:** Users can view their current tasks in a table format.
+/ **View Completed Todo's:** Users can view their completed tasks in a table format.
 
 # Technologies Used
 + **Frontend:** HTML, CSS, JavaScript
@@ -24,24 +24,24 @@ A simple Todo List web application built using HTML, CSS, JavaScript, and PHP. T
 7. After executing the SQL commands, check if the database has been successfully created by clicking on **"MySQL Admin"** in the XAMPP Control Panel and verifying the database.
 
 ## How to Use
-Clone the repository:  ```git clone https://github.com/RaviPatel04/Todo-List.git```
-Update the database connection settings in **'db.php'** with your MySQL database credentials.
-Start the PHP server and open **'index.html'** in a web browser to access the Todo List application.
+1. Clone the repository:  ```git clone https://github.com/RaviPatel04/Todo-List.git```
+2. Update the database connection settings in **'db.php'** with your MySQL database credentials.
+3. Start the PHP server and open **'index.html'** in a web browser to access the Todo List application.
 
 # Screenshots
-Home Page
+### Home Page
 
 <img width="958" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/41c42ee4-b321-4211-b968-00c3a14e4921">
 
-Todo-List Page
+### Todo-List Page
 
 <img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/149a6196-1560-4c33-9f85-229805c5643b">
 
-Edit-Todo Page
+### Edit-Todo Page
 
 <img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/15c56ce8-5c68-4650-8614-daf3de467708">
 
-Completed Todo's-List Page
+### Completed Todo's-List Page
 
 <img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/8d1514e9-3fb1-4153-ab44-407f2041f4d0">
 
