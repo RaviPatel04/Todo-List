@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 1%;
-    box-shadow: 2px 2px 5px 5px rgb(235, 235, 235);
+    box-shadow: 5px 5px 12px 6px rgb(197 191 191);
 }
 
 #links > div {
@@ -28,12 +28,17 @@ body {
 }
 
 #submit {
-    width: 70%;
-    margin: auto;
-    background-color: black;
+    width: 50%;
+    margin: 15px auto;
+    background-color: teal;
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px -7px rgba(0, 0, 0, .7);
+}
+
+#submit:hover {
+    background-color: rgb(2, 159, 159); 
 }
 
 input,
@@ -41,19 +46,23 @@ select {
     display: block;
     margin: 15px 0px;
     font-size: 20px;
-    padding: 2%;
+    padding: 1.5%;
+    border: 1.5px solid teal;
+    border-radius: 10px;
 }
 
-option {
-    font-size: 25px;
+form h2{
+    margin: 15px 0px;
 }
 
 form {
+    display: grid;
     width: 400px;
     border: 1px solid rgb(230, 230, 230);
-    margin: 3% auto;
+    margin: 5% auto;
     padding: 3%;
     background: white;
+    border-radius: 50px;
 }
 
 /* Todo List and Completed Todo List Styles */
