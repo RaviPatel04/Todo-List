@@ -17,7 +17,7 @@
 
 <main>
     <h2>Edit Todo</h2>
-    <form action="update_todo.php" method="post">
+    <form action="update_todo.php" method="post" style="margin: 2% auto;">
         <input type="hidden" id="todoId" name="id">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -29,7 +29,7 @@
             <option value="medium">Medium</option>
             <option value="low">Low</option>
         </select>
-        <input type="submit" value="Update">
+        <input id="submit" type="submit" value="Update">
     </form>
 </main>
 
