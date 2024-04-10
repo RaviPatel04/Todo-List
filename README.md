@@ -29,7 +29,22 @@ Update the database connection settings in **'db.php'** with your MySQL database
 Start the PHP server and open **'index.html'** in a web browser to access the Todo List application.
 
 # Screenshots
-Home page
+Home Page
+
 <img width="958" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/41c42ee4-b321-4211-b968-00c3a14e4921">
 
+Todo-List Page
+
+<img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/149a6196-1560-4c33-9f85-229805c5643b">
+
+Edit-Todo Page
+
+<img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/15c56ce8-5c68-4650-8614-daf3de467708">
+
+Completed Todo's-List Page
+
+<img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/8d1514e9-3fb1-4153-ab44-407f2041f4d0">
+
+# License
+This project is licensed under the MIT License. See **[LICENSE](https://github.com/RaviPatel04/Todo-List?tab=MIT-1-ov-file)** for more details.
 
