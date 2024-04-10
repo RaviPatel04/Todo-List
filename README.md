@@ -23,3 +23,13 @@ A simple Todo List web application built using HTML, CSS, JavaScript, and PHP. T
 6. Run the **'database.sql'** file to create the required database tables. Alternatively, you can copy all the SQL code and execute it manually.
 7. After executing the SQL commands, check if the database has been successfully created by clicking on **"MySQL Admin"** in the XAMPP Control Panel and verifying the database.
 
+## How to Use
+Clone the repository:  ```git clone https://github.com/RaviPatel04/Todo-List.git```
+Update the database connection settings in **'db.php'** with your MySQL database credentials.
+Start the PHP server and open **'index.html'** in a web browser to access the Todo List application.
+
+# Screenshots
+Home page
+<img width="958" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/41c42ee4-b321-4211-b968-00c3a14e4921">
+
+
