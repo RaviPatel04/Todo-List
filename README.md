@@ -19,7 +19,10 @@ A simple Todo List web application built using HTML, CSS, JavaScript, and PHP. T
 2. Start Apache and MySQL servers.
 3. Open the XAMPP Shell from the control panel.
 4. In the XAMPP Shell, run the following commands:<br>
-```cd C:\xampp\mysql\bin``` <br>
+
+```cd C:\xampp\mysql\bin```
+
+<br>
    Then, connect to MySQL: ```mysql -u root```
 6. Run the **'database.sql'** file to create the required database tables. Alternatively, you can copy all the SQL code and execute it manually.
 7. After executing the SQL commands, check if the database has been successfully created by clicking on **"MySQL Admin"** in the XAMPP Control Panel and verifying the database.
