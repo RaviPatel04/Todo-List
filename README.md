@@ -5,8 +5,8 @@ A simple Todo List web application built using HTML, CSS, JavaScript, and PHP. T
 + **Add New Task:** Users can add a new task with a name, description, and priority.
 * **Edit Task:** Users can edit the name, description, and priority of existing tasks.
 - **Mark as Done:** Users can mark tasks as completed, moving them to a "Completed Todo's" list.
-% **View Todo List:** Users can view their current tasks in a table format.
-/ **View Completed Todo's:** Users can view their completed tasks in a table format.
+* **View Todo List:** Users can view their current tasks in a table format.
+- **View Completed Todo's:** Users can view their completed tasks in a table format.
 
 # Technologies Used
 + **Frontend:** HTML, CSS, JavaScript
