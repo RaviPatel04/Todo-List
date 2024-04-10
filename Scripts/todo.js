@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     fetchTodos();
 };
 
@@ -36,12 +36,12 @@ function markAsDone(id, name, description, priority) {
         },
         body: `id=${id}&name=${name}&description=${description}&priority=${priority}`
     })
-    .then(response => {
-        if (response.redirected) {
-            window.location.href = response.url;
-        }
-    })
-    .catch(error => console.error('Error marking todo as done:', error));
+        .then(response => {
+            if (response.redirected) {
+                window.location.href = response.url;
+            }
+        })
+        .catch(error => console.error('Error marking todo as done:', error));
 }
 
 

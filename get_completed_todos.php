@@ -7,7 +7,7 @@ $result = $conn->query($sql);
 $completedTodos = [];
 
 if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
+    while ($row = $result->fetch_assoc()) {
         $completedTodos[] = $row;
     }
 }
@@ -15,4 +15,3 @@ if ($result->num_rows > 0) {
 echo json_encode($completedTodos);
 
 $conn->close();
-?>

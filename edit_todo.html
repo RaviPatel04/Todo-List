@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,35 @@
     <title>Edit Todo</title>
     <link rel="stylesheet" href="Styles/index.css">
 </head>
+
 <body>
 
-<div id="links">
-    <div><a href="index.html">Home</a></div>
-    <div><a href="todo.html">Todo List</a></div>
-    <div><a href="completed.html">Completed Todo's</a></div>
-</div>
+    <div id="links">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="todo.html">Todo List</a></div>
+        <div><a href="completed.html">Completed Todo's</a></div>
+    </div>
 
-<main>
-    <h2>Edit Todo</h2>
-    <form action="update_todo.php" method="post" style="margin: 2% auto;">
-        <input type="hidden" id="todoId" name="id">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="description">Description:</label>
-        <input type="text" id="description" name="description" required>
-        <label for="priority">Priority:</label>
-        <select id="priority" name="priority" required>
-            <option value="high">High</option>
-            <option value="medium">Medium</option>
-            <option value="low">Low</option>
-        </select>
-        <input id="submit" type="submit" value="Update">
-    </form>
-</main>
+    <main>
+        <h2>Edit Todo</h2>
+        <form action="update_todo.php" method="post" style="margin: 2% auto;">
+            <input type="hidden" id="todoId" name="id">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+            <label for="priority">Priority:</label>
+            <select id="priority" name="priority" required>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <input id="submit" type="submit" value="Update">
+        </form>
+    </main>
+    <script src="Scripts/edit_todo.js"></script>
 
-<script>
-    // Fetch todo details and populate form fields
-    const urlParams = new URLSearchParams(window.location.search);
-    const todoId = urlParams.get('id');
-    
-    fetch(`get_todo_details.php?id=${todoId}`)
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('todoId').value = data.id;
-            document.getElementById('name').value = data.name;
-            document.getElementById('description').value = data.description;
-            document.getElementById('priority').value = data.priority;
-        })
-        .catch(error => console.error('Error fetching todo details:', error));
-</script>
 
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     fetchCompletedTodos();
 };
 
@@ -19,7 +19,6 @@ function fetchCompletedTodos() {
         })
         .catch(error => console.error('Error fetching completed todos:', error));
 }
-
 
 
 

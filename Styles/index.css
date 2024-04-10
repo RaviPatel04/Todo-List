@@ -20,7 +20,7 @@ h2 {
     box-shadow: 5px 5px 12px 6px rgb(197 191 191);
 }
 
-#links > div {
+#links>div {
     display: flex;
     list-style: none;
 }
@@ -42,7 +42,7 @@ h2 {
 }
 
 #submit:hover {
-    background-color: rgb(2, 159, 159); 
+    background-color: rgb(2, 159, 159);
 }
 
 input,
@@ -55,7 +55,7 @@ select {
     border-radius: 10px;
 }
 
-form h2{
+form h2 {
     margin: 15px 2px;
 }
 
@@ -116,6 +116,10 @@ button:hover {
     background-color: #006666;
 }
 
+.error {
+    color: red;
+    margin-top: 5px;
+}
 
 div a {
     color: teal;
