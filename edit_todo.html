@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Todo</title>
+    <link rel="stylesheet" href="Styles/index.css">
+</head>
+
+<body>
+
+    <div id="links">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="todo.html">Todo List</a></div>
+        <div><a href="completed.html">Completed Todo's</a></div>
+    </div>
+
+    <main>
+        <h2>Edit Todo</h2>
+        <form action="update_todo.php" method="post" style="margin: 2% auto;">
+            <input type="hidden" id="todoId" name="id">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+            <label for="priority">Priority:</label>
+            <select id="priority" name="priority" required>
+                <option value="high">High</option><hr>
+                <option value="medium">Medium</option><hr>
+                <option value="low">Low</option>
+            </select>
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate" required>
+            <input id="submit" type="submit" value="Update">
+        </form>
+    </main>
+    <script src="Scripts/edit_todo.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Todo</title>
+    <link rel="stylesheet" href="Styles/index.css">
+</head>
+
+<body>
+
+    <div id="links">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="todo.html">Todo List</a></div>
+        <div><a href="completed.html">Completed Todo's</a></div>
+    </div>
+
+    <main>
+        <h2>Edit Todo</h2>
+        <form action="update_todo.php" method="post" style="margin: 2% auto;">
+            <input type="hidden" id="todoId" name="id">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+            <label for="priority">Priority:</label>
+            <select id="priority" name="priority" required>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <input id="submit" type="submit" value="Update">
+        </form>
+    </main>
+    <script src="Scripts/edit_todo.js"></script>
+
+
+</body>
+
+</html> -->

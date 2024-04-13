@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <script src="Scripts/validation.js"></script>
+</head>
+
+<body>
+
+    <div id="links">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="todo.html">Todo List</a></div>
+        <div><a href="completed.html">Completed Todo's</a></div>
+    </div>
+
+    <main>
+        <form action="add_todo.php" method="post" id="form" onsubmit="return validateForm()">
+            <h2>Enter Your TODO Details</h2>
+            <input placeholder="Enter Todo" id="name" name="name" type="text" />
+            <div id="nameError" class="error"></div>
+
+            <input placeholder="Enter Todo Description" type="text" name="text" id="qty" />
+            <div id="qtyError" class="error"></div>
+
+            <select name="priority" id="priority">
+                <option value="--">Select Priority</option><hr>
+                <option value="high">High</option><hr>
+                <option value="medium">Medium</option><hr>
+                <option value="low">Low</option>
+            </select>
+            <div id="priorityError" class="error"></div>
+
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate">
+            <div id="dueDateError" class="error"></div>
+
+            <input id="submit" type="submit" name="submit" value="Submit" />
+        </form>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <script src="Scripts/validation.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="links">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="todo.html">Todo List</a></div>
+        <div><a href="completed.html">Completed Todo's</a></div>
+    </div>
+
+    <main>
+        <form action="add_todo.php" method="post" id="form" onsubmit="return validateForm()">
+            <h2>Enter Your TODO Details</h2>
+            <input placeholder="Enter Todo" id="name" name="name" type="text" />
+            <div id="nameError" class="error"></div>
+
+            <input placeholder="Enter Todo Description" type="text" name="text" id="qty" />
+            <div id="qtyError" class="error"></div>
+
+            <select name="priority" id="priority">
+                <option value="--">Select Priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <div id="priorityError" class="error"></div>
+            <input id="submit" type="submit" name="submit" value="Submit" />
+        </form>
+    </main>
+
+</body>
+
+</html> -->
