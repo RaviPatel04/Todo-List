@@ -13,8 +13,11 @@ function fetchCompletedTodos() {
                         <td>${todo.name}</td>
                         <td>${todo.description}</td>
                         <td>${todo.priority}</td>
+<<<<<<< HEAD
                         <td>${todo.dueDate}</td>
                         <td>${todo.completedDate}</td>
+=======
+>>>>>>> 97679468aacb1fa16e43c128db2432430d456327
                     </tr>`;
             });
             document.getElementById('completedTodos').innerHTML = completedTodosHTML;
@@ -25,6 +28,7 @@ function fetchCompletedTodos() {
 
 
 
+<<<<<<< HEAD
 // window.onload = function () {
 //     fetchCompletedTodos();
 // };
@@ -50,6 +54,8 @@ function fetchCompletedTodos() {
 
 
 
+=======
+>>>>>>> 97679468aacb1fa16e43c128db2432430d456327
 
 
 

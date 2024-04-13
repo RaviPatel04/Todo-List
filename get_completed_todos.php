@@ -14,6 +14,7 @@ if ($result->num_rows > 0) {
 
 echo json_encode($completedTodos);
 
+<<<<<<< HEAD
 $conn->close();
 ?>
 
@@ -37,3 +38,6 @@ $conn->close();
 
 // $conn->close();
 ?>
+=======
+$conn->close();
+>>>>>>> 97679468aacb1fa16e43c128db2432430d456327

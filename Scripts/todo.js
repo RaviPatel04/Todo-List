@@ -13,10 +13,16 @@ function fetchTodos() {
                         <td>${todo.name}</td>
                         <td>${todo.description}</td>
                         <td>${todo.priority}</td>
+<<<<<<< HEAD
                         <td>${todo.dueDate}</td>
                         <td>
                             <button onclick="editTodo(${todo.id})">Edit</button>
                             <button onclick="markAsDone(${todo.id}, '${todo.name}', '${todo.description}', '${todo.priority}', '${todo.dueDate}')">Mark as Done</button>
+=======
+                        <td>
+                            <button onclick="editTodo(${todo.id})">Edit</button>
+                            <button onclick="markAsDone(${todo.id}, '${todo.name}', '${todo.description}', '${todo.priority}')">Mark as Done</button>
+>>>>>>> 97679468aacb1fa16e43c128db2432430d456327
                         </td>
                     </tr>`;
             });
@@ -29,13 +35,21 @@ function editTodo(id) {
     window.location.href = `edit_todo.html?id=${id}`;
 }
 
+<<<<<<< HEAD
 function markAsDone(id, name, description, priority, dueDate) {
+=======
+function markAsDone(id, name, description, priority) {
+>>>>>>> 97679468aacb1fa16e43c128db2432430d456327
     fetch('mark_as_done.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
+<<<<<<< HEAD
         body: `id=${id}&name=${name}&description=${description}&priority=${priority}&dueDate=${dueDate}`
+=======
+        body: `id=${id}&name=${name}&description=${description}&priority=${priority}`
+>>>>>>> 97679468aacb1fa16e43c128db2432430d456327
     })
         .then(response => {
             if (response.redirected) {
@@ -50,6 +64,7 @@ function markAsDone(id, name, description, priority, dueDate) {
 
 
 
+<<<<<<< HEAD
 // window.onload = function () {
 //     fetchTodos();
 // };
@@ -101,6 +116,8 @@ function markAsDone(id, name, description, priority, dueDate) {
 
 
 
+=======
+>>>>>>> 97679468aacb1fa16e43c128db2432430d456327
 
 
 

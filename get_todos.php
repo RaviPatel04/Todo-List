@@ -16,6 +16,7 @@ echo json_encode($todos);
 
 $conn->close();
 ?>
+<<<<<<< HEAD
 
 
 
@@ -40,3 +41,5 @@ $conn->close();
 
 // $conn->close();
 ?>
+=======
+>>>>>>> 97679468aacb1fa16e43c128db2432430d456327

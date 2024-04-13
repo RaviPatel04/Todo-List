@@ -19,6 +19,7 @@ if (isset($_GET['id'])) {
 
 mysqli_close($conn);
 ?>
+<<<<<<< HEAD
 
 
 
@@ -49,3 +50,5 @@ mysqli_close($conn);
 
 // mysqli_close($conn);
 ?>
+=======
+>>>>>>> 97679468aacb1fa16e43c128db2432430d456327
