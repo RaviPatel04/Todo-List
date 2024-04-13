@@ -31,19 +31,19 @@ A simple Todo List web application built using HTML, CSS, JavaScript, and PHP. T
 # Screenshots
 ### Home Page
 
-<img width="958" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/41c42ee4-b321-4211-b968-00c3a14e4921">
+<img width="955" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/ea7cf400-8453-4567-8ff7-edd9b136e41f">
 
 ### Todo-List Page
 
-<img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/149a6196-1560-4c33-9f85-229805c5643b">
+<img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/dc1539af-118e-4c53-90af-adfe10cf4943">
 
 ### Edit-Todo Page
 
-<img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/15c56ce8-5c68-4650-8614-daf3de467708">
+<img width="940" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/a6b31a0e-acb9-4cf9-878d-c0857118378b">
 
 ### Completed Todo's-List Page
 
-<img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/8d1514e9-3fb1-4153-ab44-407f2041f4d0">
+<img width="959" alt="image" src="https://github.com/RaviPatel04/Todo-List/assets/102582123/73518b62-9d78-4108-a403-3405a712a959">
 
 # License
 This project is licensed under the MIT License. See **[LICENSE](https://github.com/RaviPatel04/Todo-List?tab=MIT-1-ov-file)** for more details.

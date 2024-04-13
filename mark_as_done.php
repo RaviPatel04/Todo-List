@@ -6,15 +6,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $description = $_POST["description"];
     $priority = $_POST["priority"];
-<<<<<<< HEAD
     $dueDate = $_POST["dueDate"];
     $completedDate = date("Y-m-d");  // Today's date
 
     $sql = "INSERT INTO completed_todos (name, description, priority, dueDate, completedDate) VALUES ('$name', '$description', '$priority', '$dueDate', '$completedDate')";
-=======
-
-    $sql = "INSERT INTO completed_todos (name, description, priority) VALUES ('$name', '$description', '$priority')";
->>>>>>> 97679468aacb1fa16e43c128db2432430d456327
     $conn->query($sql);
 
     $sql = "DELETE FROM todos WHERE id = $id";
@@ -27,39 +22,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-<?php
-// include 'db.php';
-
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $id = $_POST["id"];
-//     $name = $_POST["name"];
-//     $description = $_POST["description"];
-//     $priority = $_POST["priority"];
-
-//     $sql = "INSERT INTO completed_todos (name, description, priority) VALUES ('$name', '$description', '$priority')";
-//     $conn->query($sql);
-
-//     $sql = "DELETE FROM todos WHERE id = $id";
-//     if ($conn->query($sql) === TRUE) {
-//         header("Location: todo.html");
-//     } else {
-//         echo "Error: " . $sql . "<br>" . $conn->error;
-//     }
-// }
-
-// $conn->close();
-?>
-
-=======
->>>>>>> 97679468aacb1fa16e43c128db2432430d456327
