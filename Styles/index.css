@@ -9,10 +9,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h2 {
-    margin: 40px 0px 0px 20px;
-}
-
 #links {
     display: flex;
     justify-content: space-evenly;
@@ -26,102 +22,7 @@ h2 {
 }
 
 #links a {
-    text-decoration: none;
-    color: teal;
-    font-size: 30px;
-}
-
-#submit {
-    width: 50%;
-    margin: 15px auto;
-    background-color: teal;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 4px 15px -7px rgba(0, 0, 0, .7);
-}
-
-#submit:hover {
-    background-color: rgb(2, 159, 159);
-}
-
-input,
-select {
-    display: block;
-    margin: 15px 0px;
-    font-size: 20px;
-    padding: 1.5%;
-    border: 1.5px solid teal;
-    border-radius: 10px;
-}
-
-form h2 {
-    margin: 15px 2px;
-}
-
-form {
-    display: grid;
-    width: 400px;
-    border: 1px solid rgb(230, 230, 230);
-    margin: 5% auto;
-    padding: 3%;
-    background: white;
-    border-radius: 50px;
-}
-
-/* Todo List and Completed Todo List Styles */
-#todos,
-#completedTodos {
-    margin-top: 20px;
-}
-
-.todo-table,
-.completed-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.todo-table th,
-.completed-table th {
-    background-color: teal;
-    color: white;
-    padding: 10px;
-    text-align: left;
-}
-
-.todo-table td,
-.completed-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-}
-
-.todo-table tr:nth-child(even),
-.completed-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Button styles */
-button {
-    padding: 5px 15px;
-    margin: 5px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: teal;
-    color: white;
-}
-
-button:hover {
-    background-color: #006666;
-}
-
-.error {
-    color: red;
-    margin-top: 5px;
-}
-
-div a {
+    font-size: 25px;
     color: teal;
     position: relative;
     margin: 10px;
@@ -156,4 +57,104 @@ a::after {
 a:hover::before,
 a:hover::after {
     transform: scaleX(1);
+}
+
+h2 {
+    margin: 40px 0px 0px 20px;
+}
+
+form {
+    display: grid;
+    width: 400px;
+    border: 1px solid rgb(230, 230, 230);
+    margin: 5% auto;
+    padding: 3%;
+    background: white;
+    border-radius: 50px;
+}
+
+form h2 {
+    margin: 15px 2px;
+}
+
+input,
+select {
+    display: block;
+    margin: 15px 0px;
+    font-size: 20px;
+    padding: 1.5%;
+    border: 1.5px solid teal;
+    border-radius: 10px;
+}
+
+form label{
+    margin-top: 8px;
+}
+
+#submit {
+    width: 50%;
+    margin: 15px auto;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px -7px rgba(0, 0, 0, .7);
+}
+
+#submit:hover {
+    background-color: rgb(2, 159, 159);
+}
+
+
+/* Todo List and Completed Todo List Styles */
+.todo-table,
+.completed-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.todo-table th,
+.completed-table th {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.todo-table td,
+.completed-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.todo-table tr:nth-child(even),
+.completed-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#todos,
+#completedTodos {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+
+/* Button styles */
+button {
+    padding: 5px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+}
+
+button:hover {
+    background-color: #006666;
 }
