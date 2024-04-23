@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Styles/index.css">
+</head>
+
+<body>
+
+    <main>
+        <h2>Login</h2>
+        <form action="" method="post" id="loginForm" style="margin: 2% auto;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input id="submit" type="submit" value="Login">
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+            <div id="loginError" class="error"></div>
+        </form>
+    </main>
+
+    <script src="Scripts/login.js"></script>
+
+</body>
+
+</html>

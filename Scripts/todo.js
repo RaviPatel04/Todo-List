@@ -8,15 +8,16 @@ function fetchTodos() {
         .then(data => {
             let todosHTML = '';
             data.forEach(todo => {
+                // let dueDate = new Date(todo.due_date).toLocaleDateString();  
                 todosHTML += `
                     <tr>
                         <td>${todo.name}</td>
                         <td>${todo.description}</td>
                         <td>${todo.priority}</td>
-                        <td>${todo.dueDate}</td>
+                        <td>${todo.due_date}</td>  
                         <td>
                             <button onclick="editTodo(${todo.id})">Edit</button>
-                            <button onclick="markAsDone(${todo.id}, '${todo.name}', '${todo.description}', '${todo.priority}', '${todo.dueDate}')">Mark as Done</button>
+                            <button onclick="markAsDone(${todo.id}, '${todo.name}', '${todo.description}', '${todo.priority}')">Mark as Done</button>
                         </td>
                     </tr>`;
             });
@@ -29,13 +30,13 @@ function editTodo(id) {
     window.location.href = `edit_todo.html?id=${id}`;
 }
 
-function markAsDone(id, name, description, priority, dueDate) {
+function markAsDone(id, name, description, priority) {
     fetch('mark_as_done.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: `id=${id}&name=${name}&description=${description}&priority=${priority}&dueDate=${dueDate}`
+        body: `id=${id}&name=${name}&description=${description}&priority=${priority}`
     })
         .then(response => {
             if (response.redirected) {

@@ -6,9 +6,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
     $description = $_POST['description'];
     $priority = $_POST['priority'];
-    $dueDate = $_POST['dueDate'];
+    $dueDate = $_POST['dueDate'];  // Corrected dueDate to dueDate
 
-    $sql = "UPDATE todos SET name='$name', description='$description', priority='$priority', dueDate='$dueDate' WHERE id=$id";
+    $sql = "UPDATE todos SET name='$name', description='$description', priority='$priority', due_date='$dueDate' WHERE id=$id";  // Corrected due_Date to due_date
 
     if (mysqli_query($conn, $sql)) {
         header('Location: todo.html');

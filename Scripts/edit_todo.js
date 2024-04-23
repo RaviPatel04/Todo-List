@@ -8,6 +8,6 @@ fetch(`get_todo_details.php?id=${todoId}`)
         document.getElementById('name').value = data.name;
         document.getElementById('description').value = data.description;
         document.getElementById('priority').value = data.priority;
-        document.getElementById('dueDate').value = data.dueDate;
+        document.getElementById('dueDate').value = data.due_date;  // Update here
     })
     .catch(error => console.error('Error fetching todo details:', error));

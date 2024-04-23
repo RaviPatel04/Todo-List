@@ -8,13 +8,15 @@ function fetchCompletedTodos() {
         .then(data => {
             let completedTodosHTML = '';
             data.forEach(todo => {
+                let dueDate = todo.formatted_due_date;
+                let completedDate = todo.formatted_completed_date;
                 completedTodosHTML += `
                     <tr>
                         <td>${todo.name}</td>
                         <td>${todo.description}</td>
                         <td>${todo.priority}</td>
-                        <td>${todo.dueDate}</td>
-                        <td>${todo.completedDate}</td>
+                        <td>${dueDate}</td>
+                        <td>${completedDate}</td>
                     </tr>`;
             });
             document.getElementById('completedTodos').innerHTML = completedTodosHTML;
