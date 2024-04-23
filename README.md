@@ -7,6 +7,7 @@ A simple Todo List web application built using HTML, CSS, JavaScript, and PHP. T
 - **Mark as Done:** Users can mark tasks as completed, moving them to a "Completed Todo's" list.
 * **View Todo List:** Users can view their current tasks in a table format.
 - **View Completed Todo's:** Users can view their completed tasks in a table format.
++ **User Validation:** **Secure and Personalized Experience!** Users can only view and manage their own tasks by logging in with their unique username and password, ensuring a tailored and private task management experience.
 
 # Technologies Used
 + **Frontend:** HTML, CSS, JavaScript
