@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Todo</title>
     <link rel="stylesheet" href="Styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,10 +16,11 @@
         <div><a href="index.html">Home</a></div>
         <div><a href="todo.html">Todo List</a></div>
         <div><a href="completed.html">Completed Todo's</a></div>
+        <div><a href="logout.php">Logout</a></div>
     </div>
 
     <main>
-        <h2>Edit Todo</h2>
+        <h3>Edit Todo</h3>
         <form action="update_todo.php" method="post" style="margin: 2% auto;">
             <input type="hidden" id="todoId" name="id">
             <label for="name">Name:</label>
@@ -27,8 +29,10 @@
             <input type="text" id="description" name="description" required>
             <label for="priority">Priority:</label>
             <select id="priority" name="priority" required>
-                <option value="high">High</option><hr>
-                <option value="medium">Medium</option><hr>
+                <option value="high">High</option>
+                <hr>
+                <option value="medium">Medium</option>
+                <hr>
                 <option value="low">Low</option>
             </select>
             <label for="dueDate">Due Date:</label>

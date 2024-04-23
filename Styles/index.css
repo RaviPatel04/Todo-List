@@ -6,27 +6,31 @@
 
 body {
     background-color: rgb(248, 246, 246);
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Changed font-family */
 }
 
 #links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center; /* Added to vertically center items */
     padding: 1%;
-    box-shadow: 5px 5px 12px 6px rgb(197 191 191);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Updated box shadow */
+    background-color: #ffffff; /* Changed background color */
+    border-bottom: 2px solid #e0e0e0; /* Added border bottom */
+    padding-left: 20px; /* Added left padding */
 }
 
-#links>div {
+#links > div {
     display: flex;
     list-style: none;
 }
 
 #links a {
-    font-size: 25px;
-    color: teal;
+    font-size: 18px; /* Adjusted font size */
+    color: #333333; /* Changed color */
     position: relative;
-    margin: 10px;
-    padding: 6px;
+    margin: 10px 15px; /* Adjusted margin */
+    padding: 8px 12px; /* Adjusted padding */
     font-family: 'Merriweather', serif;
     text-decoration: none;
     transition: color 0.25s ease-in;
@@ -60,51 +64,64 @@ a:hover::after {
 }
 
 h2 {
-    margin: 40px 0px 0px 20px;
+    margin: 30px 0px 0px 20px;
+    font-family: 'Poppins', sans-serif; /* Changed font family */
+}
+
+h3 {
+    margin: 30px 0px 0px 20px;
+    font-family: 'Poppins', sans-serif; /* Changed font family */
 }
 
 form {
     display: grid;
     width: 400px;
-    border: 1px solid rgb(230, 230, 230);
-    margin: 5% auto;
-    padding: 3%;
-    background: white;
-    border-radius: 50px;
+    border: 2px solid #e0e0e0; /* Changed border color */
+    margin: 2% auto;
+    padding: 4%;
+    background: #ffffff;
+    border-radius: 15px; /* Reduced border-radius */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Updated box shadow */
 }
 
 form h2 {
-    margin: 15px 2px;
+    margin: 15px 0; /* Adjusted margin */
+    font-size: 24px; /* Adjusted font size */
+    color: teal;
 }
 
 input,
 select {
     display: block;
     margin: 15px 0px;
-    font-size: 20px;
-    padding: 1.5%;
-    border: 1.5px solid teal;
-    border-radius: 10px;
+    font-size: 18px; /* Reduced font size */
+    padding: 12px; /* Adjusted padding */
+    border: 2px solid teal;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif; /* Changed font family */
 }
 
-form label{
-    margin-top: 8px;
+form label {
+    margin-top: 12px;
+    font-size: 18px; /* Adjusted font size */
+    color: #555555; /* Changed color */
 }
 
 #submit {
     width: 50%;
-    margin: 15px auto;
+    margin: 20px auto;
     background-color: teal;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 25px;
     box-shadow: 0 4px 15px -7px rgba(0, 0, 0, .7);
+    font-size: 18px; /* Adjusted font size */
+    padding: 10px; /* Adjusted padding */
 }
 
 #submit:hover {
     background-color: rgb(2, 159, 159);
 }
-
 
 /* Todo List and Completed Todo List Styles */
 .todo-table,
@@ -118,14 +135,14 @@ form label{
 .completed-table th {
     background-color: teal;
     color: white;
-    padding: 10px;
+    padding: 12px;
     text-align: left;
 }
 
 .todo-table td,
 .completed-table td {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 12px;
 }
 
 .todo-table tr:nth-child(even),
@@ -143,16 +160,16 @@ form label{
     margin-top: 5px;
 }
 
-
 /* Button styles */
 button {
-    padding: 5px 15px;
+    padding: 8px 18px; /* Adjusted padding */
     margin: 5px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     background-color: teal;
     color: white;
+    font-size: 18px; /* Adjusted font size */
 }
 
 button:hover {
